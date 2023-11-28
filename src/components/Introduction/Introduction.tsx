@@ -38,7 +38,7 @@ export function Introduction() {
                     animate="show"
                     exit="hidden"
                 >
-                    <Image src="/assets/Cohete.png" priority width="550" height="125" alt="Avatar" className='transform scale-x-[-1]'/>
+                    <Image src="/assets/Cohete.png" priority width="550" height="125" alt=""/>
                 </motion.div>
 
                 <motion.div variants={fadeIn("left", 0.5)}
@@ -47,14 +47,14 @@ export function Introduction() {
                     exit="hidden"
                 >
                     <h1 className="mb-5 text-4xl leading-tight md:mb-10 text-black">Soluciones de   <br />
-                        <span className="text-black">diseños a medida</span></h1>
+                        <span className="text-black">diseños a medida.</span></h1>
                     <p className="max-w-sm  mb-10 text-xl md:max-w-6xl md:mx-0 md:mb-16 md:text-2xl text-black">
-                        Transformamos tus ideas en realidad <br />
+                        Transformamos tus ideas en realidad.<br />
                     </p>
 
                     <div className="flex flex-col items-center gap-3 md:gap-10 md:flex-row">
                         <button onClick={openContactModal} className="px-6 py-3 my-2 transition-all border-2 cursor-pointer border-black rounded-xl hover:shadow-xl hover:shadow-black bg-black">
-                            Contactanos
+                            Contáctanos
                         </button>
                     </div>
                 </motion.div>
