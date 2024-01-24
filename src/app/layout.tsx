@@ -1,7 +1,6 @@
 "use client"
 import { Navbar } from '@/components/Navbar'
 import './global.css'
-import type { Metadata } from 'next'
 import { Alata } from 'next/font/google'
 import { I18nextProvider } from "react-i18next"
 import i18next from 'i18next'
@@ -49,10 +48,6 @@ i18next.init({
 
 const ALT = Alata({ subsets: ['latin'], weight: "400" })
 
-export const metadata: Metadata = {
-  title: 'Infinity',
-  description: 'Infinity',
-}
 
 export default function RootLayout({
   children,

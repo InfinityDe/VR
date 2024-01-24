@@ -47,7 +47,7 @@ export const optionsParticles = {
         density: {
           enable: false, // Deshabilita la densidad
         },
-        value: 80, // Ajusta el número de partículas
+        value: 50, // Ajusta el número de partículas
       },
       opacity: {
         value: 0.5,
