@@ -1,8 +1,6 @@
-import { Swiper, SwiperSlide } from "swiper/react"
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/scrollbar'
-import { Pagination } from "swiper/modules"
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css"
 import { testimonialsData } from "./TestimonialsSlider.data"
 import Image from "next/image"
 import React from "react"
@@ -12,30 +10,27 @@ export function TestimonialSlider() {
 
     const [t] = useTranslation("testimonials");
 
+    const settings = {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        infinite: true,
+        speed: 500,
+        autoplay: true,
+        autplaySpeed:  3000
+    };
+
     return (
         <div>
-            <Swiper
-                breakpoints={{
-                    320: {
-                        slidesPerView: 1,
-                        spaceBetween: 15
-                    },
-                }}
-                freeMode={true}
-                pagination={{
-                    clickable: true
-                }}
-                modules={[Pagination]}
-                className="h-[380px] md:h-[300px] w-[270px] md:w-[550px]"
-            >
+            <Slider {...settings} className="h[380px] md:[300px] w-[270px] md:w-[550px]">
                 {testimonialsData.map(({ id, name, testimonial, image }) => (
-                    <SwiperSlide key={id}>
+                    <div key={id}>
                         <Image src={`/assets/${image}`} alt={name} width="100" height="100" className="mx-auto" />
                         <h4 className="text-center">{name}</h4>
                         <div className="mt-5 text-center">{t(`Testimonials.test.${testimonial}`)}</div>
-                    </SwiperSlide>
+                    </div>
                 ))}
-            </Swiper>
+            </Slider>
         </div>
     )
 }
