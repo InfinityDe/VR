@@ -1,0 +1,47 @@
+{
+    "Services": {
+        "primero": "Our",
+        "segundo": "services.",
+        "parrafo": "At INFINITY, our services are more than just tools; they are the cornerstone to propel your online presence towards greatness. Each solution we offer exceeds expectations, setting a new standard in web design and development. Discover how our passion for excellence transforms ideas into striking digital realities.",
+    
+        "title": {
+            "1": "Entrepreneurship",
+            "2": "WindowNet",
+            "3": "Interactivist",
+            "4": "Adaptative",
+            "5": "WebAps360",
+            "6": "SecureWeb",
+            "7": "ImpactLanding",
+            "8": "Sustainable",
+            "9": "Brandify",
+            "10": "Visualize",
+            "11": "PromoGraph",
+            "12": "PackArt",
+            "13": "IllustraGraph",
+            "14": "Redeon",
+            "15": "ForceView",
+            "16": "Infographeo",
+            "17": "Eventea"
+        },
+        
+        "description": {
+            "1": "Exceptional corporate websites: design and development that enhance your business presence.",
+            "2": "Powerful online store development that transforms visitors into satisfied customers.",
+            "3": "Dynamic and engaging websites with animations that captivate your visitors.",
+            "4": "Responsive and mobile web development ensuring a seamless experience on any device.",
+            "5": "Custom web applications that adapt to the specific needs of your business.",
+            "6": "Implementation of SSL certificates to ensure maximum security on your website.",
+            "7": "Impactful landing pages designed to convert visitors into customers in marketing campaigns.",
+            "8": "Continuous maintenance and updates to ensure the relevance and efficiency of your website.",
+            "9": "Logo design and corporate branding that build a strong and unique visual identity.",
+            "10": "Complete visual identity creation for your company, from business cards to corporate stationery.",
+            "11": "Design of attractive promotional materials, from brochures to stunning business cards.",
+            "12": "Packaging and product label design that enhances the presentation of your products.",
+            "13": "Custom illustrations and graphics that add a unique and appealing touch to your content.",
+            "14": "Design of advertising banners and graphics for social media that highlight your brand.",
+            "15": "Creation of visually stunning presentations that captivate your audience.",
+            "16": "Infographic creation and visually appealing content for blogs and social media.",
+            "17": "Design of materials for events, such as posters and brochures, that stand out and attract attention."
+        }        
+    }
+}

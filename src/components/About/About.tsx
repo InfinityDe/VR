@@ -1,4 +1,3 @@
-"use client"
 import { motionTransitionsAbout } from "@/utils/motionTransitions";
 import { Avatar } from "../Avatar";
 import { motion } from 'framer-motion'
@@ -6,9 +5,12 @@ import { dataAboutSkills, dataCounter } from "./About.data";
 import CountUp from "react-countup";
 import { useState } from "react";
 import { BiDownArrow, BiLeftArrow } from "react-icons/bi";
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 export function About() {
     const [index, setIndex] = useState(0)
+    const [t] = useTranslation("about");
 
     return (
         <div className="items-center min-h-screen px-6 mx-auto align-middle mt-36 md:mt-0 md:flex md:max-w-4xl pb-36 md:pb-0">
@@ -18,9 +20,8 @@ export function About() {
                 animate={motionTransitionsAbout.animate}
                 transition={motionTransitionsAbout.transition}
             >
-                <h1 className="mb-6 md:text-4xl text-black">Exelencia a tu Servicio</h1>
-                <p className="text-black text-xl">En Infinity transformamos tus idead en realidad. Somos inovadores, audaces y apasionados en nuestro trabajo. Únete a nosotros en el camino hacia el éxito en línea.</p>
-
+                <h1 className="mb-6 md:text-4xl text-black">{t("About.primero")}</h1>
+                <p className="text-black text-xl">{t("About.segundo")}</p>
                 <div className="grid justify-between grid-cols-2 gap-3 my-8 md:flex md:grid-cols-4 md:gap-6">
                     {dataCounter.map(({ id, endCounter, text, lineRight, lineRightMobile }) => (
                         <div key={id} className={`${lineRight && 'ltr'}`}>
@@ -29,7 +30,7 @@ export function About() {
                                     + <CountUp end={endCounter} start={0} duration={4} />
                                 </p>
                                 <p className="text-xs uppercase max-w-[100px] text-black">
-                                    {text}
+                                    {t(`About.counterTexts.${text}`)}
                                 </p>
                             </div>
                         </div>
@@ -49,7 +50,9 @@ export function About() {
                                         cursor-pointer md:text-lg relative px-2 md:px-8 py-4 border-2 rounded-xl flex justify-between items-center my-3 text-grey-500`}
                                 onClick={() => setIndex(itemIndex)}
                             >
-                                <p className="mr-4 text-md md:text-lg">{text}</p>
+                                <p className="mr-4 text-md md:text-lg">
+                                    {t(`About.skillsTexts.${text}`)}
+                                </p>
                                 {index === id ? (
                                     <BiDownArrow classname="transform:rotate-90 transition-0.9" />
                                 ) : (

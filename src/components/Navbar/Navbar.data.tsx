@@ -2,29 +2,29 @@ import { RiHome4Line, RiAccountPinCircleLine, RiServerLine, RiBriefcase2Line, Ri
 
 export const dataNavbar = [
   {
-    name: "home",
+    name: 1,
     path: "/",
     icon: <RiHome4Line size="30" />,
   },
   {
-    name: "about",
+    name: 2,
     path: "/about",
     icon: <RiAccountPinCircleLine size="30" />,
   },
   {
-    name: "services",
+    name: 3,
     path: "/services",
     icon: <RiServerLine size="30" />,
   },
   
   {
-    name: "works",
+    name: 4,
     path: "/works",
     icon: <RiBriefcase2Line size="30" />,
 
   },
   {
-    name: "testimonials",
+    name: 5,
     path: "/testimonials",
     icon: <RiChatPollLine size="30" />,
   }

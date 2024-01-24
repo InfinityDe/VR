@@ -1,0 +1,12 @@
+{
+    "Testimonials":{
+        "title1": "Algunos comentarios ",
+        "title2": "de nuestros clientes.",
+        
+        "test":{
+            "1": "Con INFINITY obtuvimos una obra de arte digital. Captaron nuestra esencia y la reflejaron en cada detalle. Son un equipo talentoso y apasionado, ¡la opción para una experiencia única!",
+            "2": "Trabajar con INFINITY fue una experiencia increíble. Lograron captar nuestra idea y plasmarla a la perfección. Siempre amables y dispuestos, ¡los mejores socios para un proyecto exitoso!",
+            "3": "INFINITY no solo nos armó la web, sino que la hizo sentir nuestra. Su equipo captó nuestra onda desde el vamos. Hicieron magia con el diseño, ¡nos sentimos reflejados en cada pixel! Son súper creativos, siempre van un paso más allá. Los recomiendo 100%, ¡son como parte de nuestro equipo!" 
+        }
+    }
+}

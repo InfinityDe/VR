@@ -29,7 +29,7 @@ export const dataCounter = [
       skills: [
       
         {
-          title: "HTML, CSS, JavaScript, TailWind",
+          title: "HTML5, Ts, CSS, JavaScript, TailWind",
           date: "2020",
         },
         {

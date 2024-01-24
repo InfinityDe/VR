@@ -21,87 +21,87 @@ import { MdOutlineLocalGroceryStore } from "react-icons/md";
 export const serviceData = [
     {
         icon: <RxDesktop  />,
-        title: "Empresarialidad",
-        description: "Sitios web corporativos excepcionales: diseño y desarrollo que potencia tu presencia empresarial.",
+        title: 1,
+        description: 1,
     },
     {
         icon: <MdOutlineLocalGroceryStore />,
-        title: "Ventanet",
-        description: "Desarrollo de tiendas online poderosas que transforman visitantes en clientes satisfechos.",
+        title: 2,
+        description: 2,
     },
     {
         icon: <RxSymbol />,
-        title: "Interactivista",
-        description: "Sitios web dinámicos y atractivos con animaciones que cautivan a tus visitantes.",
+        title: 3,
+        description: 3,
     },
     {
         icon: <RxReader />,
-        title: "Adaptivo",
-        description: "Desarrollo web responsivo y móvil que asegura una experiencia perfecta en cualquier dispositivo.",
+        title: 4,
+        description: 4,
     },
     {
         icon: <RxGlobe />,
-        title: "WebApps360",
-        description: "Aplicaciones web personalizadas que se adaptan a las necesidades específicas de tu negocio.",
+        title: 5,
+        description: 5,
     },
     {
         icon: <RxLockClosed />,
-        title: "SeguriWeb",
-        description: "Implementación de certificados SSL para garantizar la máxima seguridad en tu sitio web."
+        title: 6,
+        description: 6,
     },
     {
         icon: <RxRocket />,
-        title: "ImpactaLanding",
-        description: "Landing pages impactantes diseñadas para convertir visitantes en clientes en campañas de marketing."
+        title: 7,
+        description: 7,
     },
     {
         icon: <RxGear />,
-        title: "Mantenible",
-        description: "Mantenimiento continuo y actualizaciones para asegurar la vigencia y eficiencia de tu sitio web."
+        title: 8,
+        description: 8,
     },
     {
         icon: <RxBlendingMode />,
-        title: "Brandea",
-        description: "Diseño de logotipos y branding corporativo que construyen una identidad visual fuerte y única."
+        title: 9,
+        description: 9,
     },
     {
         icon: <RxEyeOpen />,
-        title: "Visualiza",
-        description: "Creación de identidad visual completa para tu empresa, desde tarjetas hasta papelería corporativa."
+        title: 10,
+        description: 10,
     },
     {
         icon: <RxGrid />,
-        title: "PromoGraph",
-        description: "Diseño de material promocional atractivo, desde folletos hasta tarjetas de visita impactantes."
+        title: 11,
+        description: 11,
     },
     {
         icon: <RxPencil1 />,
-        title: "PackArt",
-        description: "Diseño de packaging y etiquetas de productos que realzan la presentación de tus productos."
+        title: 12,
+        description: 12,
     },
     {
         icon: <RxBlendingMode />,
-        title: "IlustraGraph",
-        description: "Ilustraciones y gráficos personalizados que añaden un toque único y atractivo a tu contenido."
+        title: 13,
+        description: 13,
     },
     {
         icon: <RxImage />,
-        title: "Redeon",
-        description: "Diseño de banners publicitarios y gráficos para redes sociales que destacan tu marca."
+        title: 14,
+        description: 14,
     },
     {
         icon: <RxStar />,
-        title: "VistaFuerza",
-        description: "Diseño de presentaciones visualmente impactantes que cautivan a tu audiencia."
+        title: 15,
+        description: 15,
     },
     {
         icon: <RxDropdownMenu />,
-        title: "Infografeo",
-        description: "Creación de infografías y contenido visual para blogs y redes sociales de manera atractiva."
+        title: 16,
+        description: 16,
     },
     {
         icon: <RxSketchLogo />,
-        title: "Eventea",
-        description: "Diseño de material para eventos, como carteles y folletos, que destacan y atraen la atención."
+        title: 17,
+        description: 17,
     },
 ];

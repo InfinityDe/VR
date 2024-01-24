@@ -4,9 +4,12 @@ import { Circle } from "../Circle";
 import { motion } from 'framer-motion'
 import { Slider } from "./Slider";
 import { useEffect, useState } from 'react';
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 export function Services() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
+  const [t] = useTranslation("services");
 
   useEffect(() => {
     function updateScreenSize() {
@@ -33,14 +36,14 @@ export function Services() {
                         animate="show"
                         exit="hidden"
                     >
-                        Nuestros <span className="text-black">servicios</span>
+                        {t("Services.primero")} <span className="text-black">{t("Services.segundo")}</span>
                     </motion.h1>
                     <motion.p
                         variants={fadeIn('up', 0.5)}
                         initial="hidden"
                         animate="show"
                         exit="hidden"
-                        className="max-w-md text-black text-xl">En INFINITY, nuestros servicios no solo son herramientas; son la piedra angular para impulsar tu presencia en línea hacia la grandeza. Cada solución que ofrecemos supera las expectativas, marcando un nuevo estándar en el diseño y desarrollo web. Descubre cómo nuestra pasión por la excelencia transforma ideas en realidades digitales impactantes.
+                        className="max-w-md text-black text-xl">{t("Services.parrafo")}
                     </motion.p>
                 </div>
 

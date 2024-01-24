@@ -1,0 +1,47 @@
+{
+    "Services": {
+        "primero": "Nuestros",
+        "segundo": "servicios.",
+        "parrafo": "En INFINITY, nuestros servicios no solo son herramientas; son la piedra angular para impulsar tu presencia en línea hacia la grandeza. Cada solución que ofrecemos supera las expectativas, marcando un nuevo estándar en el diseño y desarrollo web. Descubre cómo nuestra pasión por la excelencia transforma ideas en realidades digitales impactantes.",
+
+        "title": {
+            "1": "Empresarialidad",
+            "2": "VentaNet",
+            "3": "Interactivista",
+            "4": "Adaptativo",
+            "5": "WebApps360",
+            "6": "SeguriWeb",
+            "7": "ImpactaLanding",
+            "8": "Mantenible",
+            "9": "Brandea",
+            "10": "Visualiza",
+            "11": "PromoGraph",
+            "12": "PackArt",
+            "13": "IlustraGraph",
+            "14": "Redeon",
+            "15": "VstaFuerza",
+            "16": "Infografeo",
+            "17": "Eventea"
+        },
+
+        "description": {
+            "1": "Sitios web corporativos excepcionales: diseño y desarrollo que potencia tu presencia empresarial.",
+            "2": "Desarrollo de tiendas online poderosas que transforman visitantes en clientes satisfechos.",
+            "3": "Sitios web dinámicos y atractivos con animaciones que cautivan a tus visitantes.",
+            "4": "Desarrollo web responsivo y móvil que asegura una experiencia perfecta en cualquier dispositivo.",
+            "5": "Aplicaciones web personalizadas que se adaptan a las necesidades específicas de tu negocio.",
+            "6": "Implementación de certificados SSL para garantizar la máxima seguridad en tu sitio web.",
+            "7": "Landing pages impactantes diseñadas para convertir visitantes en clientes en campañas de marketing.",
+            "8": "Mantenimiento continuo y actualizaciones para asegurar la vigencia y eficiencia de tu sitio web.",
+            "9": "Diseño de logotipos y branding corporativo que construyen una identidad visual fuerte y única.",
+            "10": "Creación de identidad visual completa para tu empresa, desde tarjetas hasta papelería corporativa.",
+            "11": "Diseño de material promocional atractivo, desde folletos hasta tarjetas de visita impactantes.",
+            "12": "Diseño de packaging y etiquetas de productos que realzan la presentación de tus productos.",
+            "13": "Ilustraciones y gráficos personalizados que añaden un toque único y atractivo a tu contenido.",
+            "14": "Diseño de banners publicitarios y gráficos para redes sociales que destacan tu marca.",
+            "15": "Diseño de presentaciones visualmente impactantes que cautivan a tu audiencia.",
+            "16": "Creación de infografías y contenido visual para blogs y redes sociales de manera atractiva.",
+            "17": "Diseño de material para eventos, como carteles y folletos, que destacan y atraen la atención."
+        }
+    }
+}

@@ -1,10 +1,10 @@
 import { fadeIn } from "@/utils/motionTransitions";
-import { Circle } from "../Circle";
 import { motion } from 'framer-motion';
 import { cardContent } from "./Work.data";
 import { useState, useEffect } from "react";
 import classNames from 'classnames';
-
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 
 export function Work() {
@@ -39,6 +39,8 @@ export function Work() {
         }
     };
 
+    const [t] = useTranslation("work");
+
     return (
 
     <div className="flex items-center justify-center h-screen">
@@ -46,18 +48,18 @@ export function Work() {
         className="flex flex-col md:flex-row gap-x-5 -top-5 -md:top-10"
         style={{ marginTop: isSmallScreen ? '1800px' : '0' }}
       >
-            <Circle />
             <div className="grid pb-32 md:min-h-screen mt-28 md:mt-0 place-items-center">
                 <div>
+    
                     <motion.h1
                         variants={fadeIn('left', 0.5)}
                         initial="hidden"
                         animate="show"
                         exit="hidden"
                         className="my-5 text-2xl text-center md:text-4-xl text-black mt-20"
-                    >
-                        Nuestros últimos <span className="text-black">trabajos realizados.</span>
+                    >{t("Work.title1")}<span className="text-black">{t("Work.title2")}</span>
                     </motion.h1>
+                    
                     <motion.div
                         className="flex flex-col items-center h-full gap-5 px-2 md:flex-row"
                         variants={fadeIn('up', 0.5)}
@@ -110,7 +112,9 @@ export function Work() {
                                 </motion.div>
                             );
                         })}
+                        
                     </motion.div>
+                    
                 </div>
             </div>
         </div>

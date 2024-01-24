@@ -4,9 +4,13 @@ import { motion } from 'framer-motion'
 import { fadeIn } from '@/utils/motionTransitions'
 import { dataNavbar } from './Navbar.data'
 import Link from 'next/link'
+import React from 'react'
+import { useTranslation } from 'react-i18next'
 
 export function Navbar() {
     const pathName = usePathname()
+
+    const [t] = useTranslation("nav")
 
     return (
         <motion.div
@@ -19,7 +23,7 @@ export function Navbar() {
                         <Link href={path} className={`${path === pathName && 'currentIconPage'} group transition-all duration-300 hover:text-black text-gray-500`}>
                             <div className="absolute right-0 hidden mr-20 rounded-sm md:group-hover:flex md:group-hover:items-center">
                                 <div className="relative flex items-center p-2 leading-none text-black capitalize bg-white rounded-sm">
-                                    {name}
+                                {t(`Nav.${name}`)}
                                 </div>
                                 <div className="absolute border-l-8 border-r-0 border-solid border-l-white border-y-transparent border-y-4 -right-2" />
                             </div>

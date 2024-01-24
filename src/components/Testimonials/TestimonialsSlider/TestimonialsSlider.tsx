@@ -5,10 +5,13 @@ import 'swiper/css/scrollbar'
 import { Pagination } from "swiper/modules"
 import { testimonialsData } from "./TestimonialsSlider.data"
 import Image from "next/image"
-
-
+import React from "react"
+import { useTranslation } from "react-i18next"
 
 export function TestimonialSlider() {
+
+    const [t] = useTranslation("testimonials");
+
     return (
         <div>
             <Swiper
@@ -29,7 +32,7 @@ export function TestimonialSlider() {
                     <SwiperSlide key={id}>
                         <Image src={`/assets/${image}`} alt={name} width="100" height="100" className="mx-auto" />
                         <h4 className="text-center">{name}</h4>
-                        <div className="mt-5 text-center">{testimonial}</div>
+                        <div className="mt-5 text-center">{t(`Testimonials.test.${testimonial}`)}</div>
                     </SwiperSlide>
                 ))}
             </Swiper>

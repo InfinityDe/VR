@@ -1,0 +1,19 @@
+{
+  "About": {
+    "primero": "Exelencia a tu Servicio",
+    "segundo": "En Infinity transformamos tus idead en realidad. Somos inovadores, audaces y apasionados en nuestro trabajo. Únete a nosotros en el camino hacia el éxito en línea.",
+    
+
+      "counterTexts": {
+        "Años de experiencia": "Años de experiencia",
+        "Clientes satisfechos": "Clientes satisfechos",
+        "Proyectos finalizados": "Proyectos finalizados"
+      },
+
+      "skillsTexts": {
+        "Skills": "Skills",
+        "Experiencia": "Experiencia",
+        "Estudios": "Estudios"
+      }
+  }
+}

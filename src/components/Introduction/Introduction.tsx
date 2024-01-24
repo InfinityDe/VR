@@ -4,6 +4,8 @@ import { motion } from 'framer-motion';
 import Image from 'next/image';
 import { useForm, ValidationError } from '@formspree/react';
 import { Header } from '@/components/Header'
+import React from 'react';
+import { useTranslation } from 'react-i18next'
 
 
 
@@ -27,6 +29,8 @@ export function Introduction() {
     }
   }, [state.succeeded])
 
+  const [t] = useTranslation ("home");
+
   return (
     <div className="w-full z-10 mt-20">
       <Header />
@@ -46,15 +50,13 @@ export function Introduction() {
                     animate="show"
                     exit="hidden"
                 >
-                    <h1 className="mb-5 text-4xl leading-tight md:mb-10 text-black">Soluciones de   <br />
-                        <span className="text-black">diseños a medida.</span></h1>
-                    <p className="max-w-sm  mb-10 text-xl md:max-w-6xl md:mx-0 md:mb-16 md:text-2xl text-black">
-                        Transformamos tus ideas en realidad.<br />
+                    <h1 className="mb-5 text-4xl leading-tight md:mb-10 text-black">{t("Home.title1")}<br />
+                        <span className="text-black">{t("Home.title2")}</span></h1>
+                    <p className="max-w-sm  mb-10 text-xl md:max-w-6xl md:mx-0 md:mb-16 md:text-2xl text-black">{t("Home.text")}<br />
                     </p>
 
                     <div className="flex flex-col items-center gap-3 md:gap-10 md:flex-row">
-                        <button onClick={openContactModal} className="px-6 py-3 my-2 transition-all border-2 cursor-pointer border-black rounded-xl hover:shadow-xl hover:shadow-black bg-black">
-                            Contáctanos
+                        <button onClick={openContactModal} className="px-6 py-3 my-2 transition-all border-2 cursor-pointer border-black rounded-xl hover:shadow-xl hover:shadow-black bg-black">{t("Home.boton.title")}
                         </button>
                     </div>
                 </motion.div>
@@ -66,25 +68,25 @@ export function Introduction() {
         <div className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-70">
           <div className="bg-white p-6 rounded-md">
 
-            <h2 className="text-2xl mb-3 text-black">Envianos un mensaje!</h2>
+            <h2 className="text-2xl mb-3 text-black">{t("Home.boton.text1")}</h2>
             <div className="mb-3">
-              <label htmlFor="name" className="text-black">Nombre:</label>
+              <label htmlFor="name" className="text-black">{t("Home.boton.text2")}</label>
               <input type="text" name='name' id="name" required className="w-full border border-gray-300 rounded-md p-2 text-black" />
               <ValidationError prefix='Name' field='name' errors={state.errors}/>
             </div>
             <div className="mb-3">
-              <label htmlFor="email" className="text-black">Email:</label>
+              <label htmlFor="email" className="text-black">{t("Home.boton.text3")}</label>
               <input type="email" name='email' id="email" required className="w-full border border-gray-300 rounded-md p-2 text-black" />
               <ValidationError prefix='Email' field='email' errors={state.errors} />
             </div>
             <div className="mb-3">
-            <label htmlFor="email" className="text-black">Mensaje:</label>
+            <label htmlFor="email" className="text-black">{t("Home.boton.text4")}</label>
               <textarea id="message" name='message' required className="w-full border border-gray-300 rounded-md p-2 text-black"></textarea>
               <ValidationError prefix='Message' field='message' errors={state.errors} />
             </div>
 
-            <button type='submit' disabled={state.submitting} className="px-4 py-2 bg-black text-white rounded-md">Enviar</button>
-            <button onClick={closeContactModal} className="ml-2 px-4 py-2 bg-gray-300 text-black rounded-md">Cancelar</button>
+            <button type='submit' disabled={state.submitting} className="px-4 py-2 bg-black text-white rounded-md">{t("Home.boton.text5")}</button>
+            <button onClick={closeContactModal} className="ml-2 px-4 py-2 bg-gray-300 text-black rounded-md">{t("Home.boton.text6")}</button>
           </div>
             </div>
           </form>
@@ -93,8 +95,8 @@ export function Introduction() {
         {isFormSubmited && (
           <motion.div className='fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-70' initial={{ opacity:0 }} animate={{opacity: 1}} exit={{opacity:0}}>
             <div className='bg-white p-6 rounded-md z-50'>
-              <h2 className='text-2x1 mb-3 text-black'>¡Gracias por tu mensaje!</h2>
-              <p>Tu mensaje ha sido enviado con éxito.</p>
+              <h2 className='text-2x1 mb-3 text-black'>{t("Home.boton.text7")}</h2>
+              <p>{t("Home.boton.text8")}</p>
               <button 
               onClick={() => {closeContactModal()}} className='m1-2 px-4 py-2 bg-black text-white rounded-md'
               > Home
