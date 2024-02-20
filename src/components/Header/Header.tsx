@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { socialNetworks } from './dataHeader'
 import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import Image from 'next/image'
 
 export function Header() {
     const [t, i18n] = useTranslation("nav");
@@ -29,15 +30,19 @@ export function Header() {
             <motion.div variants={fadeIn('up', 0.5)} initial="hidden" animate="show" exit="hidden">
                 <div className="container flex justify-between mx-auto md:flex">
                     <div className='flex items-center gap-7'>
-                        <img
+                        <Image
                             src='/assets/LOGO.png'
+                            width="100"
+                            height="100"
                             alt="Logo de la empresa"
                             style={{ width: '50px', height: '50px' }}
                             className="my-3 text-4xl text-center md:text-left mx-auto md:mx-0"
                         />
-                        <img
+                        <Image
                             src='/assets/icono_menu.png'
                             alt='logo de la empresa'
+                            width="1000"
+                            height="1000"
                             style={{ width: '30px', height: '30px' }}
                             className='my-5 text-4xl text-center md:text-left' />
                             <button className='relative overflow-hidden bg-transparent items-center border-none py-2 px-4 inline-block text-base uppercase cursor-pointer transform -skew-x-12 group hover:text-white -mr-5'>
@@ -64,8 +69,8 @@ export function Header() {
                             <button onClick={() => changeLanguage("en")} className={`text-${isSpanish ? 'gray-500' : 'white'} px-2 py-2 md:px-1 md:py-2`}>EN</button>
                             <button onClick={() => changeLanguage("es")} className={`text-${isSpanish ? 'white' : 'gray-500'} px-2 py-2 md:px-1 md:py-2`}>ES</button>
                         </div>
-                        {socialNetworks.map(({ logo }) => (
-                            <div className="container relative box-border w-auto">
+                        {socialNetworks.map(({ logo, id }) => (
+                            <div key={id} className="container relative box-border w-auto">
                               <input
                                 checked={true}
                                 className="checkbox box-border w-30 h-30 absolute right-17 top-10 z-9 cursor-pointer appearance-none"

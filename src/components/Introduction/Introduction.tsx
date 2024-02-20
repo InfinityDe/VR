@@ -4,6 +4,7 @@ import { fadeIn } from '@/utils/motionTransitions';
 import { motion } from 'framer-motion';
 import { Header } from '@/components/Header'
 import { useTranslation } from 'react-i18next'
+import Image from 'next/image';
 
 const h1Style = {
   marginBottom: '5px',
@@ -33,7 +34,7 @@ export function Introduction() {
               animate="show"
               exit="hidden"
             >
-              <img 
+              <Image 
                 src="/assets/fondo.png" 
                 width="683" 
                 height="125" 
