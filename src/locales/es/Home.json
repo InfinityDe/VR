@@ -1,20 +1,12 @@
 {
     "Home": {
-        "title1": "Soluciones de   ",
-        "title2" : "diseños a medida.",
-
-        "text": "Transformamos tus ideas en realidad.",
-
-        "boton": {
-            "title": "Contáctanos",
-            "text1": "Envianos un mensaje!",
-            "text2": "Nombre:",
-            "text3": "Email:",
-            "text4": "Mensaje:",
-            "text5": "Enviar",
-            "text6": "Cancelar",
-            "text7": "¡Gracias por tu mensaje!",
-            "text8": "Tu mensajeha sido enviado con éxito"
-        }
+      "title1": "Siente la chispa de la inspiración",
+      "title2": "Qué es más",
+      "title21": "real que lo real?",
+      "title22": "Realidad Virtual"
+    },
+    "Botones":{
+      "boton1":"Explorar",
+      "boton2":"Obtener App"
     }
-}
+  }

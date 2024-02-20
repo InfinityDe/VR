@@ -1,9 +1,10 @@
 {
-    "Nav":{
-        "1":"Inicio",
-        "2": "Nosotros",
-        "3": "Servicios",
-        "4": "Proyectos",
-        "5": "Clientes"
+    "Nav": {
+        "t1": "Caracterisiticas",
+        "t2": "Nosotros",
+        "t3": "Generador NFT",
+        "t4": "Soporte",
+        "t5": "Descargar",
+        "t6": "Buscar"
     }
 }

@@ -1,21 +1,13 @@
 {
     "Home": {
-      "title1": "Solutions for ",
-      "title2": "Custom Designs.",
-  
-      "text": "Turning your ideas into reality.",
-  
-      "boton": {
-        "title": "Contact Us",
-        "text1": "Send us a message!",
-        "text2": "Name:",
-        "text3": "Email:",
-        "text4": "Message:",
-        "text5": "Send",
-        "text6": "Cancel",
-        "text7": "Thank you for your message!",
-        "text8": "Your message has been successfully sent"
-      }
+      "title1": "Feel the spark of inspiration",
+      "title2": "Whats more",
+      "title21": "real than real?",
+      "title22": "Virtual Reality"
+    },
+    "Botones":{
+      "boton1":"Explore",
+      "boton2":"Get App"
     }
   }
   

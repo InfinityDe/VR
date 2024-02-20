@@ -1,9 +1,10 @@
 {
-    "Nav":{
-        "1":"Home",
-        "2": "About",
-        "3": "Services",
-        "4": "Work",
-        "5": "Testimonials"
+    "Nav": {
+        "t1": "Features",
+        "t2": "About us",
+        "t3": "NFT Generator",
+        "t4": "Support",
+        "t5": "Download",
+        "t6": "Search"
     }
 }
